@@ -1,0 +1,19 @@
+file_format: "1.0-rc.1"
+
+log_level: warning
+
+resource:
+  detection/development:
+    detectors:
+      - composer:
+      - container:
+      - host:
+      - process:
+
+meter_provider:
+  readers:
+    - pull:
+        exporter:
+          prometheus/development:
+            host: 0.0.0.0
+            without_scope_info: true

@@ -1,0 +1,7 @@
+/.gitignore         export-ignore
+/.gitattributes     export-ignore
+/.editorconfig      export-ignore
+
+/.env               export-ignore
+/sdk-config.yaml    export-ignore
+/example.php        export-ignore
