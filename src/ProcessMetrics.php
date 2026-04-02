@@ -18,7 +18,7 @@ use const PHP_VERSION_ID;
 
 final class ProcessMetrics implements Instrumentation {
 
-    public function register(HookManagerInterface $hookManager, ConfigProperties $configuration, Context $context): void {
+    public function register(?HookManagerInterface $hookManager, ConfigProperties $configuration, Context $context): void {
         $meter = $context->meterProvider->getMeter(
             name: 'com.tobiasbachert.otel.metrics.process',
             version: InstalledVersions::getPrettyVersion('tbachert/otel-instrumentation-runtime-metrics'),
