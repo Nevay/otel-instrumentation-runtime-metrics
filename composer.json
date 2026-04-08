@@ -31,11 +31,9 @@
         "branch-alias": {
             "dev-main": "0.1.x-dev"
         },
-        "spi": {
-            "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\Instrumentation": [
-                "Nevay\\OTelInstrumentation\\RuntimeMetrics\\OpcacheMetrics",
-                "Nevay\\OTelInstrumentation\\RuntimeMetrics\\ProcessMetrics",
-                "Nevay\\OTelInstrumentation\\RuntimeMetrics\\RevoltEventLoopMetrics"
+        "spi-config": {
+            "autoload-files": [
+                "_register.php"
             ]
         }
     }
