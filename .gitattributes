@@ -3,5 +3,5 @@
 /.editorconfig      export-ignore
 
 /.env               export-ignore
-/sdk-config.yaml    export-ignore
+/otel-config.yaml   export-ignore
 /example.php        export-ignore
