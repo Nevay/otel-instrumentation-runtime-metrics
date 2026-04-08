@@ -9,6 +9,7 @@
         "open-telemetry/api": "^1.4"
     },
     "require-dev": {
+        "ext-pcntl": "*",
         "symfony/dotenv": "^7.3",
         "symfony/yaml": "^7.3",
         "tbachert/otel-sdk": "^0.1"
@@ -32,6 +33,7 @@
         },
         "spi": {
             "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\Instrumentation": [
+                "Nevay\\OTelInstrumentation\\RuntimeMetrics\\OpcacheMetrics",
                 "Nevay\\OTelInstrumentation\\RuntimeMetrics\\ProcessMetrics",
                 "Nevay\\OTelInstrumentation\\RuntimeMetrics\\RevoltEventLoopMetrics"
             ]

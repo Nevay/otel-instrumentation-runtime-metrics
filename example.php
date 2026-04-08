@@ -6,4 +6,4 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-Amp\trapSignal(SIGINT | SIGTERM);
+Amp\trapSignal([SIGINT, SIGTERM]);
