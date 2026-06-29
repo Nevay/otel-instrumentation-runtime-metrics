@@ -25,16 +25,17 @@
     "autoload": {
         "psr-4": {
             "Nevay\\OTelInstrumentation\\RuntimeMetrics\\": "src/"
-        }
+        },
+        "files": [
+            "_register.php"
+        ]
     },
     "extra": {
         "branch-alias": {
             "dev-main": "0.1.x-dev"
         },
         "spi-config": {
-            "autoload-files": [
-                "_register.php"
-            ]
+            "autoload-files": true
         }
     }
 }
