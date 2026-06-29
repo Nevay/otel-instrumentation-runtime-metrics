@@ -1,4 +1,4 @@
-file_format: '1.0'
+file_format: '1.1'
 
 log_level: warn
 
@@ -16,4 +16,4 @@ meter_provider:
         exporter:
           prometheus/development:
             host: 0.0.0.0
-            without_scope_info: true
+            scope_info_enabled: false
